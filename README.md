@@ -1,7 +1,7 @@
 ## Clean Analytic Filters (Piano Transcription)
 Code for the paper [Learning Clean Analytic Filters for Piano Transcription](www.stub.com).
 The repository contains scripts to run and analyze a filterbank learning experiment on a piano transcription task.
-It is a thin layer on top of two more general repositories
+It is a thin layer on top of two more general repositories:
  - [lhvqt](https://github.com/cwitkowitz/lhvqt) - filterbank learning module
  - [amt-tools](https://github.com/cwitkowitz/amt-tools) - music transcription framework
 
@@ -55,7 +55,7 @@ python scripts/evaluate.py
 The GPU to use and the model path are defined at the top of the script.
 
 ## Generated Files
-The experiment root directory ```<root_dir>``` is one parameter defined at the top of each script.
+The experiment root directory ```<root_dir>``` is one parameter defined at the top of the experiment script.
 Execution of ```scripts/experiment.py``` will generate the following under ```<root_dir>```:
  - ```n/```
 
@@ -103,7 +103,7 @@ tensorboard --logdir=<root_dir>/models --port=<port>
 Here we assume the current directory within the command-line interface contains ```<root_dir>```.
  ```<port>``` is an integer corresponding to an available port (```port = 6006``` if unspecified).
 
-After running the command, navigate to <http://localhost:<port>> to view any reported training or validation observations within the tensorboard interface.
+After running the command, navigate to http://localhost:<port> to view any reported training or validation observations within the tensorboard interface.
 
 ## Cite
 ##### Stub 2021 Paper

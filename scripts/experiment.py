@@ -42,10 +42,10 @@ def config():
     num_frames = 625
 
     # Number of training iterations to conduct
-    iterations = 200
+    iterations = 2000
 
     # How many equally spaced save/validation checkpoints - 0 to disable
-    checkpoints = 10
+    checkpoints = 100
 
     # Number of samples to gather for a batch
     batch_size = 8
@@ -54,7 +54,7 @@ def config():
     learning_rate = 6e-4
 
     # The id of the gpu to use, if available
-    gpu_id = 1
+    gpu_id = 0
 
     # Flag to re-acquire ground-truth data and re-calculate-features
     # This is useful if testing out different feature extraction parameters
