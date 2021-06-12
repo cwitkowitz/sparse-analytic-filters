@@ -103,7 +103,7 @@ tensorboard --logdir=<root_dir>/models --port=<port>
 Here we assume the current directory within the command-line interface contains ```<root_dir>```.
  ```<port>``` is an integer corresponding to an available port (```port = 6006``` if unspecified).
 
-After running the command, navigate to http://localhost:<port> to view any reported training or validation observations within the tensorboard interface.
+After running the command, navigate to <http://localhost:port> to view any reported training or validation observations within the tensorboard interface.
 
 ## Cite
 ##### Stub 2021 Paper

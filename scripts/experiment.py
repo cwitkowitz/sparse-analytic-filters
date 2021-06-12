@@ -188,7 +188,7 @@ def onsets_frames_run(sample_rate, hop_length, num_frames, iterations, checkpoin
                      sample_rate=sample_rate,
                      data_proc=data_proc,
                      profile=profile,
-                     reset_data=True,
+                     reset_data=False,
                      store_data=False,
                      save_data=True,
                      save_loc=features_gt_cache)
