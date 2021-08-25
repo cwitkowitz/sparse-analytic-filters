@@ -1,2 +1,2 @@
-lhvqt>=0.4.2
+lhvqt>=0.5.0
 amt_tools>=0.1.4

@@ -9,6 +9,8 @@ from amt_tools.evaluate import *
 
 import amt_tools.tools as tools
 
+from model import OnsetsFrames2LHVQT
+
 # Regular imports
 import torch
 

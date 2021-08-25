@@ -1,7 +1,7 @@
 # Author: Frank Cwitkowitz <fcwitkow@ur.rochester.edu>
 
 # My imports
-# None of my imports used
+from model import OnsetsFrames2LHVQT
 
 # Regular imports
 import torch

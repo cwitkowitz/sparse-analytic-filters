@@ -1,7 +1,7 @@
 # Author: Frank Cwitkowitz <fcwitkow@ur.rochester.edu>
 
 # My imports
-# None of my imports used
+from model import OnsetsFrames2LHVQT
 
 # Regular imports
 import torch
@@ -39,6 +39,7 @@ def visualize(model, save_dir, i=None):
 if __name__ == '__main__':
     model_path = 'path/to/model'
     save_dir = 'path/to/images'
+
 
     gpu_id = 0
     device = torch.device(f'cuda:{gpu_id}'

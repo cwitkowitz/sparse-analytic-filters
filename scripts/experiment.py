@@ -1,4 +1,4 @@
-# Author: Frank Cwitkowitz <fcwitkow@ur.rochester.edu>n
+# Author: Frank Cwitkowitz <fcwitkow@ur.rochester.edu>
 
 # My imports
 from amt_tools.datasets import MAESTRO_V3, MAPS

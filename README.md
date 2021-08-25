@@ -1,5 +1,5 @@
-## Clean Analytic Filters (Piano Transcription)
-Code for the paper [Learning Clean Analytic Filters for Piano Transcription](www.stub.com).
+## Sparse Analytic Filters (Piano Transcription)
+Code for the paper [Learning Sparse Analytic Filters for Piano Transcription](https://arxiv.org/abs/2108.10382).
 The repository contains scripts to run and analyze a filterbank learning experiment on a piano transcription task.
 It is a thin layer on top of two more general repositories:
  - [lhvqt](https://github.com/cwitkowitz/lhvqt) - filterbank learning module
@@ -8,8 +8,8 @@ It is a thin layer on top of two more general repositories:
 ## Installation
 Clone the repository and install the requirements.
 ```
-git clone https://github.com/cwitkowitz/clean-analytic-filters
-pip install -r clean-analytic-filters/requirements.txt
+git clone https://github.com/cwitkowitz/sparse-analytic-filters
+pip install -r sparse-analytic-filters/requirements.txt
 ```
 
 This will install the two aforementioned repositories along with dependencies.
@@ -106,9 +106,12 @@ Here we assume the current directory within the command-line interface contains 
 After running the command, navigate to <http://localhost:port> to view any reported training or validation observations within the tensorboard interface.
 
 ## Cite
-##### Stub 2021 Paper
+##### arXiv Paper
 ```
-@inproceedings{
-  stub2021
+@article{cwitkowitz2021learning,
+  author  = {Frank Cwitkowitz and Mojtaba Heydari and Zhiyao Duan},
+  title   = {Learning Sparse Analytic Filters for Piano Transcription},
+  journal = {arXiv preprint arXiv:2108.10382},
+  year    = {2021}
 }
 ```
