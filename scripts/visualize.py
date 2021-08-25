@@ -40,7 +40,6 @@ if __name__ == '__main__':
     model_path = 'path/to/model'
     save_dir = 'path/to/images'
 
-
     gpu_id = 0
     device = torch.device(f'cuda:{gpu_id}'
                           if torch.cuda.is_available() else 'cpu')
