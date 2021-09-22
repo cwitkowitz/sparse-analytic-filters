@@ -13,6 +13,7 @@ from model import OnsetsFrames2LHVQT
 
 # Regular imports
 import torch
+import os
 
 model_path = 'path/to/model'
 
@@ -46,8 +47,12 @@ features_gt_cache = os.path.join('..', 'generated', 'data')
 # MAESTRO                                        #
 ##################################################
 
+# Define the path to the MAESTRO dataset
+base_dir_mstro = 'path/to/MAESTRO_V3'
+
 # Create a dataset corresponding to the MAESTRO testing partition
-mstro_test = MAESTRO_V3(splits=['test'],
+mstro_test = MAESTRO_V3(base_dir=base_dir_mstro,
+                        splits=['test'],
                         hop_length=hop_length,
                         sample_rate=sample_rate,
                         data_proc=data_proc,
@@ -69,8 +74,12 @@ validation_evaluator.reset_results()
 # MAPS                                           #
 ##################################################
 
+# Define the path to the MAPS dataset
+base_dir_maps = 'path/to/MAPS'
+
 # Create a dataset corresponding to the MAPS testing partition
-maps_test = MAPS(splits=['ENSTDkAm', 'ENSTDkCl'],
+maps_test = MAPS(base_dir=base_dir_maps,
+                 splits=['ENSTDkAm', 'ENSTDkCl'],
                  hop_length=hop_length,
                  sample_rate=sample_rate,
                  data_proc=data_proc,

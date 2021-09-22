@@ -75,11 +75,11 @@ class OnsetsFrames2LHVQT(OnsetsFrames2):
         # Perform standard Onsets & Frames 2 steps
         output = super().post_proc(batch)
 
-        # Check to see if loss is being tracked
-        if tools.KEY_LOSS in output.keys():
-            # Obtain a pointer to the filterbank module
-            fb_module = self.frontend.fb.get_modules()[0]
+        # Obtain a pointer to the filterbank module
+        fb_module = self.frontend.fb.get_modules()[0]
 
+        # Check to see if loss is being tracked
+        if tools.KEY_LOSS in output.keys() and fb_module.var_drop:
             # Extract all of the losses
             loss = output[tools.KEY_LOSS]
 

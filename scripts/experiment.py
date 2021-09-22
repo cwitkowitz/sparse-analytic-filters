@@ -88,7 +88,7 @@ def onsets_frames_run(sample_rate, hop_length, num_frames, iterations, checkpoin
     # Initialize learnable filterbank data processing module
     data_proc = LHVQT(sample_rate=sample_rate,
                       hop_length=hop_length,
-                      lhvqt=l.lhvqt_comb.LHVQT,
+                      lhvqt=l.lhvqt.LHVQT,
                       lvqt=l.lvqt_hilb.LVQT,
                       fmin=None,
                       harmonics=[1],
@@ -118,8 +118,8 @@ def onsets_frames_run(sample_rate, hop_length, num_frames, iterations, checkpoin
     test_split = ['test']
 
     # Define expected path for raw datasets
-    base_dir_mstro = None
-    base_dir_maps = None
+    base_dir_mstro = 'path/to/MAESTRO_V3'
+    base_dir_maps = 'path/to/MAPS'
 
     # Define expected path for calculated features and ground-truth
     features_gt_cache = os.path.join('..', 'generated', 'data')
