@@ -106,12 +106,12 @@ Here we assume the current directory within the command-line interface contains 
 After running the command, navigate to <http://localhost:port> to view any reported training or validation observations within the tensorboard interface.
 
 ## Cite
-##### arXiv Paper
+##### SMC 2022 Paper
 ```
-@article{cwitkowitz2021learning,
-  author  = {Frank Cwitkowitz and Mojtaba Heydari and Zhiyao Duan},
-  title   = {Learning Sparse Analytic Filters for Piano Transcription},
-  journal = {arXiv preprint arXiv:2108.10382},
-  year    = {2021}
+@inproceedings{cwitkowitz2022learning,
+  title     = {Learning Sparse Analytic Filters for Piano Transcription},
+  author    = {Frank Cwitkowitz and Mojtaba Heydari and Zhiyao Duan},
+  year      = 2022,
+  booktitle = {Proceedings of Sound and Music Computing Conference (SMC)}
 }
 ```
